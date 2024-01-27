@@ -8,6 +8,8 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import Image from "next/image";
+import { OcapiatLogo } from "@/images/logos";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -173,6 +175,7 @@ export default function Page() {
             {RESUME_DATA.projects.map((project) => {
               return (
                 <ProjectCard
+                  logo={project.logo}
                   key={project.title}
                   title={project.title}
                   description={project.description}
@@ -189,7 +192,7 @@ export default function Page() {
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
+            title: "Site personnel",
           },
           ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
             url: socialMediaLink.url,

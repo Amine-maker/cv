@@ -14,9 +14,9 @@ import {
 import { Button } from "./ui/button";
 import { CommandIcon } from "lucide-react";
 
-interface Props {
+type Props = {
   links: { url: string; title: string }[];
-}
+};
 
 export const CommandMenu = ({ links }: Props) => {
   const [open, setOpen] = React.useState(false);
@@ -51,9 +51,9 @@ export const CommandMenu = ({ links }: Props) => {
         <CommandIcon className="my-6 size-6" />
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Type a command or search..." />
+        <CommandInput placeholder="Choisir une action ou rechercher..." />
         <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
+          <CommandEmpty>Aucun resulat.</CommandEmpty>
           <CommandGroup heading="Actions">
             <CommandItem
               onSelect={() => {
@@ -61,10 +61,10 @@ export const CommandMenu = ({ links }: Props) => {
                 window.print();
               }}
             >
-              <span>Print</span>
+              <span>Imprimer</span>
             </CommandItem>
           </CommandGroup>
-          <CommandGroup heading="Links">
+          <CommandGroup heading="Liens">
             {links.map(({ url, title }) => (
               <CommandItem
                 key={url}

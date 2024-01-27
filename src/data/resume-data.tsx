@@ -55,7 +55,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Ocapiat",
-      link: "https://ocapiat.fr",
+      link: "https://www.ocapiat.fr/",
       badges: ["Actuel"],
       title: "Développeur Web",
       logo: OcapiatLogo,
@@ -105,6 +105,20 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Ocapeek",
+      techStack: [
+        "TypeScript",
+        "Angular",
+        "Tailwind",
+        "C#",
+        ".NET",
+        "SQLServer",
+      ],
+      description:
+        "Application interne dédiée à la gestion des entrées et sorties en relation avec les sites physique d'Ocapiat, incluant une fonctionnalité de gestion des rendez-vous extérieurs.",
+      logo: OcapiatLogo,
+    },
+    {
       title: "SDS Streaming",
       techStack: ["Projet d'école", "TypeScript", "Angular", "TMDB"],
       description: "Plateforme basée sur l'API de TMDB",
@@ -125,7 +139,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Omicrone",
+      title: "Commission",
       techStack: ["PHP", "Redbean", "MySQL"],
       description:
         "Développement d'une application web de gestion des commissions et de la trésorerie.",

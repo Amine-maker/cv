@@ -6,20 +6,24 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
   title: string;
   description: string;
   tags: readonly string[];
+  logo?: StaticImageData;
   link?: string;
 }
 
-export function ProjectCard({ title, description, tags, link }: Props) {
+export function ProjectCard({ title, description, tags, link, logo }: Props) {
   return (
     <Card className="flex flex-col overflow-hidden border border-muted p-3">
       <CardHeader className="">
         <div className="space-y-1">
           <CardTitle className="text-base">
+            {" "}
+            {logo && <Image className="" src={logo} width={25} alt="f" />}
             {link ? (
               <a
                 href={link}
