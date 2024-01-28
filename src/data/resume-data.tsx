@@ -4,6 +4,7 @@ import {
   OmicroneLogo,
   NinksLogo,
   PortfolioLogo,
+  NinksDarkLogo,
 } from "@/images/logos";
 
 export const RESUME_DATA = {
@@ -102,6 +103,16 @@ export const RESUME_DATA = {
       link: {
         label: "Ninks",
         href: "https://ninks.vercel.app/",
+      },
+    },
+    {
+      title: "Ninks Showcase",
+      techStack: ["Javascript", "GSAP", "Vite", "Swipper"],
+      description: "Site vitrine de l'application Ninks simulant un produit",
+      logo: NinksDarkLogo,
+      link: {
+        label: "Ninks showcase",
+        href: "https://ninks-showcase.netlify.app",
       },
     },
     {
