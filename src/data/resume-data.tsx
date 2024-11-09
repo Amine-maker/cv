@@ -19,7 +19,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://amidjenn.netlify.app/home",
   contact: {
     email: "amine.djennadi@hotmail.fr",
-    tel: "+33686899626",
+    tel: "+33679687587",
     social: [
       {
         name: "GitHub",
@@ -78,6 +78,8 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
+    "HTML",
+    "CSS",
     "JavaScript",
     "TypeScript",
     "React/Angular",
@@ -108,7 +110,8 @@ export const RESUME_DATA = {
     {
       title: "Ninks Showcase",
       techStack: ["Javascript", "GSAP", "Vite", "Swipper"],
-      description: "Site vitrine de l'application Ninks simulant un produit",
+      description:
+        "Site vitrine de l'application Ninks simulant un potentiel produit",
       logo: NinksDarkLogo,
       link: {
         label: "Ninks showcase",
